@@ -1,0 +1,13 @@
+<div *ngIf=product>
+<p>
+{{product.name}} clicked
+</p>
+<p>
+{{product.price}}
+</p>
+<p>
+{{product.description}}
+</p>
+<button *ngIf="!addedToCart" (click)="addToCart()"><i class="material-icons">shopping_cart</i>Buy</button>
+ <p *ngIf="addedToCart"> Item added to cart! </p>
+</div>
